@@ -1,0 +1,26 @@
+@import './scss/_main';
+@import './scss/_colors';
+
+.app {
+    padding: $standardSpace;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    color: $colorSecondary;
+
+    .title{
+        border-bottom: 2px solid $colorSecondary;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        padding: $standardSpace * 4;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+        width: 70vw;
+        padding: $standardSpace * 4;
+    }
+}

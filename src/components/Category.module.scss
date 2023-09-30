@@ -1,0 +1,60 @@
+@import './../scss/_main';
+@import './../scss/_colors';
+
+.category {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: $standardSpace 0;
+
+    .freeText {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        padding: calc($standardSpace / 5) $standardSpace;
+        background-color: $colorsLight;
+        width: fit-content;
+        margin-bottom: $standardSpace;
+
+        & > div {
+            padding: $standardSpace;
+        }
+    }
+
+    .categorySearch{
+        display: flex;
+        flex-direction: row;
+        padding: $standardSpace;
+        align-items: center;
+
+        label {
+            flex-grow: 1;
+            text-align: right;
+        }
+
+        select {
+            flex-grow: 7;
+            margin: 0 $standardSpace;
+            border: 1px solid $colorSecondary;
+            padding: $standardSpace;
+        }
+
+        button {
+            flex-grow: 2;
+            padding: $standardSpace $standardSpace * 2;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .categorySearch {
+            flex-direction: column;
+            align-items: start;
+            padding: $standardSpace 0;
+
+            select {
+                margin: $standardSpace 0;
+                width: 100%;
+            }
+        }
+    }
+}

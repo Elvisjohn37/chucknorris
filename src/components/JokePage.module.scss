@@ -1,0 +1,28 @@
+@import './../scss/_main';
+@import './../scss/_colors';
+
+.jokePage{
+    border: 1px solid $colorSecondary;
+    width: 100%;
+    padding: $standardSpace;
+    display: flex;
+    flex-direction: column;
+    min-height: 120px;
+    justify-content: space-between;
+
+    .date {
+        
+    }
+
+    .content {
+        margin: $standardSpace 0;
+    }
+
+    .pageName {
+        text-align: right;
+    }
+
+    .loader {
+        margin: auto;
+    }
+}
